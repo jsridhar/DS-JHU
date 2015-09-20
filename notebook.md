@@ -1,4 +1,6 @@
-# Types of Data Science Questions
+# The Data Scientist's Tool Box
+
+## Types of Data Science Questions
 
 * Descriptive: Describe a set of data.
   - The first kind of data analysis performed.
@@ -38,3 +40,13 @@
   - Usually modelled by a deterministic set of equations (physical / engineering science)
   - Generally the random component of the data is measurement error
   - If the equations are known but the parameters are not, they may be inferred by data analysis
+
+## What is Data?
+
+* Data: *Data are values of qualitative or quantitative variables, belonging to a set of items*
+  - Set of items: Sometimes called the population; the set of objects you are interested in 
+  - Variables: A measurement or characteristic of an item
+  - Qualitative: Ex. country of origin, sex, treatment
+  - Quantitative: Ex. height, weight, blood pressure
+
+* The most important thing in data scrience is QUESTION, and DATA is the second most important thing
