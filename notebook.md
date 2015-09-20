@@ -50,3 +50,9 @@
   - Quantitative: Ex. height, weight, blood pressure
 
 * The most important thing in data scrience is QUESTION, and DATA is the second most important thing
+
+## Experimental Design
+
+* Formulate your question in advance. Ex: Does changing the text on your website improve donations (A / B variant analysis)?
+* Confounding: Shoe & litracy is correlated by Age (confounding variable). Randomization & blocking can help confounding variable.
+* Design of Exeperiments (DOE) or experimental design is the design of any information gathering exercises where variation is present, whether under full control of the experiment or not. However, in statistics, these terms are used for controlled experiments.
