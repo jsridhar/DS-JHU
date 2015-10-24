@@ -20,10 +20,11 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ---
 
-## High level design
+## Steps to run the project
 
-run_analysis.R
-* RunAnalysis: Main function that controls the flow of the program.
-* InitEnv: Install & load necessary packages, download & extract the data files, .
-* MergeDataset: Merges the training and test data set.
-* TidyDataset: Descriptive names, appropriate lables, independent tiday data with averages
+1. Download project data to the working directory from [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+2. Open RStudio, and run
+        
+        > source("run_analysis.R")
+        
+3. See results in tidy_data.txt file in the working directory
