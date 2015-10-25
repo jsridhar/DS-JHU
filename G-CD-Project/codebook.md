@@ -13,11 +13,11 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 Variable name       | Description
 -------------       | -----------
-Subject             | ID of the Subject who performed the activity for each window sample.
+Subject             | Identifies the Subject who performed the activity for each window sample.
 Activity            | Name of the actvity performed (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 FeatureDomain       | Feature: Time domain signal or frequency domain signal (Time or Freq)
-FeatureInstrument   | Feature: Measuring instrument (Accelerometer or Gyroscope)
-FeatureAcceleration | Feature: Acceleration signal (Body or Gravity)
+FeatureInstrument   | Feature: Measuring instrument (Accelerometer or Gyroscope). Gyroscope units are in rad/seg.
+FeatureAcceleration | Feature: Acceleration signal (Body or Gravity). Units are in 'g's (gravity of earth -> 9.80665 m/seg2)
 Feature-mean()      | Feature: Mean or Standard Deviation (mean() or std())
 FeatureJerk         | Feature: Jerk signal
 FeatureMagnitude    | Feature: Magnitude of the signals calculated using the Euclidean norm
@@ -66,3 +66,23 @@ FeatureAxis         | Feature: 3-axial signals in the X, Y and Z directions
 
 ---
 
+## Output - tidy_data.txt
+
+Output of the run_analysis.R produces tidy data text file "tidy_data.txt" in the current working directory of RStudio. The file contains 180 observations of 68 variables. First 10 observations on 5 variables listed below:
+
+<pre>
+   Subject           Activity TimeBodyAccelerometer-mean()-X TimeBodyAccelerometer-mean()-Y TimeBodyAccelerometer-mean()-Z
+     (int)              (chr)                          (dbl)                          (dbl)                          (dbl)
+1        1             LAYING                      0.2215982                   -0.040513953                     -0.1132036
+2        1            SITTING                      0.2612376                   -0.001308288                     -0.1045442
+3        1           STANDING                      0.2789176                   -0.016137590                     -0.1106018
+4        1            WALKING                      0.2773308                   -0.017383819                     -0.1111481
+5        1 WALKING_DOWNSTAIRS                      0.2891883                   -0.009918505                     -0.1075662
+6        1   WALKING_UPSTAIRS                      0.2554617                   -0.023953149                     -0.0973020
+7        2             LAYING                      0.2813734                   -0.018158740                     -0.1072456
+8        2            SITTING                      0.2770874                   -0.015687994                     -0.1092183
+9        2           STANDING                      0.2779115                   -0.018420827                     -0.1059085
+10       2            WALKING                      0.2764266                   -0.018594920                     -0.1055004
+</pre>
+
+Complete output is in tidy_data.txt file generated from running the program: run_analysis.R
